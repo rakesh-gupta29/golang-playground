@@ -1,0 +1,36 @@
+<div
+  class="mx-auto grid max-w-screen-xl grid-cols-1 gap-3 px-3 py-10 md:w-11/12 md:grid-cols-2 md:gap-5 lg:grid-cols-3 lg:gap-7 xl:py-14"
+>
+  {{range .Results}}
+
+  <article
+    class="max-w-md mx-auto w-full border-[1px] justify-betweenborder-solid flex flex-col rounded-md border-zinc-700 bg-zinc-800 px-4 py-6 text-white md:px-5"
+  >
+    <span class="flex-1 basis-20 text-xl font-normal lg:text-2xl"
+      >{{ .Name.Common }}
+    </span>
+    <div class="grid place-content-start">
+      <a
+     
+        {{ $var := printf "%s%s" "https://restcountries.com/v3.1/alpha/"  .CCA2   }}
+        href="{{ $var }}"
+        target="_blank"
+        class="group flex items-center gap-1 text-sm font-normal text-opacity-90 underline decoration-from-font underline-offset-4 hover:text-opacity-100 focus-visible:text-opacity-100 lg:text-base"
+        >View Details<svg
+          class="mt-px h-4 w-4 opacity-0 transition-all duration-300 ease-in-out group-hover:opacity-100 group-focus-visible:opacity-100"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+          ></path></svg
+      ></a>
+    </div>
+  </article>
+  {{ end }}
+</div>

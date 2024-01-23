@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JSON to HTML Rendering</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      fetch("http://localhost:1000/v1/filters/?landlocked=true&unMember=false")
+        .then((res) => res.json())
+        .then((data) => {
+          // data.forEach((element) => {
+          //   console.log(element.name);
+          // });
+          console.log(data);
+        });
+    </script>
+  </body>
+</html>

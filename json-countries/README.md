@@ -1,0 +1,2 @@
+- get all countries : /all
+- get a country by name: either by common name, oficial name or a native name
