@@ -16,7 +16,7 @@ func makecall(timer time.Duration, resch chan time.Duration) {
 	resch <- timer
 
 }
-func main() {
+func UseChannels() {
 
 	namesch := make(chan time.Duration)
 	start := time.Now()
