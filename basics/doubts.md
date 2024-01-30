@@ -1,1 +1,3 @@
 - how do I namespace the packages
+- can I nest named functions in golang.
+- some common struct config patterns.
