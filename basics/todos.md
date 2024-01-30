@@ -1,0 +1,3 @@
+- learn more about the mutex
+- concurrent variables with shared variables.
+- how does panic and recovery works in golang

@@ -28,7 +28,7 @@ func (woman Woman) breath() bool {
 	return true
 }
 
-func main() {
+func UseInterfaces() {
 	man := Man{name: "rakesh", age: 20}
 	woman := Woman{name: "jasmeet", age: 30}
 	fmt.Println(man.canDrink())
